@@ -3,10 +3,10 @@
 This is a fully responsive e-commerce website where users can browse products, add them to the shopping cart. The application is built with **NextJs** and utilizes **Redux** for state management and **Context API** for handling API calls.
 
 ## Figma Design
+Link to Desing: [Open In Figma](https://www.figma.com/community/file/1454844671412995105)
 
 ![Ecommerce Design](/public/SmallShopEcommerceSite.png)
 
-Link to Desing: [Open In Figma](https://www.figma.com/community/file/1454844671412995105)
 
 ## Features
 
