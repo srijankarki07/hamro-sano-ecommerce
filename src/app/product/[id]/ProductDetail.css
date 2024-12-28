@@ -1,0 +1,134 @@
+.product-detail {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.product-detail h1 {
+  font-size: 32px;
+  color: #333;
+}
+
+.product-detail p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.image-carousel {
+  max-width: 450px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.product-detail .product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-carousel button {
+  position: absolute;
+  top: 50%;
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+.carousel-button.prev {
+  left: 6px;
+}
+.carousel-button.next {
+  right: 10px;
+}
+
+.product-detail .product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-info {
+  padding: 20px;
+  height: fit-content;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #28a745;
+  margin-top: 20px;
+}
+
+.product-detail .product-actions {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.add-to-cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.add-to-cart button {
+  color: white;
+  font-size: 15px;
+  width: fit-content;
+  background-color: #f85606;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.add-to-cart button:hover {
+  background-color: #e75811d9;
+}
+
+@media (max-width: 768px) {
+  .product-detail {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 50px;
+  }
+
+  .product-detail h1 {
+    font-size: 24px;
+  }
+
+  .product-detail p {
+    font-size: 15px;
+  }
+
+  .image-carousel {
+    width: 100%;
+  }
+
+  .product-detail .product-image {
+    width: 100%;
+    margin-bottom: -2px;
+  }
+
+  .product-price {
+    font-size: 1.25rem;
+  }
+}
