@@ -61,11 +61,14 @@ const Modal = ({ isVisible, onClose }) => {
       item.title.toLowerCase().includes(filterText.toLowerCase())
     )
     .sort((a, b) => {
+      const totalPriceA = a.price * a.quantity;
+      const totalPriceB = b.price * b.quantity;
+
       if (sortOption === "price-asc") {
-        return a.price - b.price;
+        return totalPriceA - totalPriceB;
       }
       if (sortOption === "price-desc") {
-        return b.price - a.price;
+        return totalPriceB - totalPriceA;
       }
       if (sortOption === "quantity-asc") {
         return a.quantity - b.quantity;
